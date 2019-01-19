@@ -11,7 +11,7 @@ Latest version as of Jan 16, 2019: draft-07
 -- [https://json-schema.org/latest/json-schema-core.html](https://json-schema.org/latest/json-schema-core.html)
 
 - JSON Schema Validation: A Vocabulary for Structural Validation of JSON
--- [https://json-schema.org/latest/json-schema-validation.html](https://json-schema.org/latest/json-schema-core.html)
+-- [https://json-schema.org/latest/json-schema-validation.html](https://json-schema.org/latest/json-schema-validation.html)
 
 *Refer to website for complete information*
 
