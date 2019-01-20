@@ -1,6 +1,21 @@
 # jschema_py36
 A JSON Schema validator
 
+## Setup
+
+Using `pipenv`, run:
+```bash
+pipenv shell
+pipenv install --dev
+```
+
+## Tests
+
+At the root of the project:
+```bash
+behave tests\spec_compliance\features\json_schema_validation\type.feature --no-capture
+```
+
 ## JSON Schema
 
 Website: [https://json-schema.org/](https://json-schema.org/)

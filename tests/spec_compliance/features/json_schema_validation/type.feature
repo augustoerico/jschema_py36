@@ -4,17 +4,28 @@ Feature: Keyword validation - type
     Scenario: integer type matches integers
 
         Given the schema provided in "schemas/type.json"
+        And the json in <path>
 
-        When the envaluating the json in <path>
+            | path                  |
+            | payloads/type.json#/0 |
+            | payloads/type.json#/1 |
+            | payloads/type.json#/2 |
+            | payloads/type.json#/3 |
+            | payloads/type.json#/4 |
+            | payloads/type.json#/5 |
+            | payloads/type.json#/6 |
+            | payloads/type.json#/7 |
+
+        When we evaluate the json against the schema
 
         Then the result should be <result>
 
-            | path                  | result   |
-            | payloads/type.json#/0 | accepted |
-            | payloads/type.json#/1 | rejected |
-            | payloads/type.json#/2 | rejected |
-            | payloads/type.json#/3 | rejected |
-            | payloads/type.json#/4 | rejected |
-            | payloads/type.json#/5 | rejected |
-            | payloads/type.json#/6 | rejected |
-            | payloads/type.json#/7 | rejected |
+            | result   |
+            | accepted |
+            | rejected |
+            | rejected |
+            | rejected |
+            | rejected |
+            | rejected |
+            | rejected |
+            | rejected |
