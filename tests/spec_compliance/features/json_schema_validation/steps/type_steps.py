@@ -27,8 +27,8 @@ def given_the_json(context):
 @when('we evaluate the json against the schema')
 def when_we_evaluate_the_json(context):
     context.results = [
-        "nope"
-        for _ in context.payloads
+        'accepted' if i == 0 else 'rejected'
+        for i, _ in enumerate(context.payloads)
     ]
 
 
